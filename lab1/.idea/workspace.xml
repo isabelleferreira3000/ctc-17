@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a03844cd-bf50-4664-9135-cee0d2e74cf6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node.py" beforeDir="false" afterPath="$PROJECT_DIR$/Node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/australia.csv" beforeDir="false" afterPath="$PROJECT_DIR$/australia.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/read_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/read_file.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +12,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/read_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="110">
+              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -28,7 +27,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/australia.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="45">
+            <state relative-caret-position="315">
               <caret line="117" column="46" selection-start-line="117" selection-start-column="46" selection-end-line="117" selection-end-column="46" />
             </state>
           </provider>
@@ -37,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Node.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -73,9 +72,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/read_file.py" />
         <option value="$PROJECT_DIR$/australia.csv" />
         <option value="$PROJECT_DIR$/Node.py" />
+        <option value="$PROJECT_DIR$/read_file.py" />
       </list>
     </option>
   </component>
@@ -142,12 +141,12 @@
       <updated>1567011763965</updated>
       <workItem from="1567011772430" duration="100000" />
       <workItem from="1567011910931" duration="1890000" />
-      <workItem from="1567185580556" duration="1981000" />
+      <workItem from="1567185580556" duration="4896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3971000" />
+    <option name="totallyTimeSpent" value="6886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -167,7 +166,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.044843048" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.46636772" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -190,9 +189,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/australia.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="45">
+        <state relative-caret-position="315">
           <caret line="117" column="46" selection-start-line="117" selection-start-column="46" selection-end-line="117" selection-end-column="46" />
         </state>
       </provider>
@@ -205,15 +211,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/read_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="110">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
