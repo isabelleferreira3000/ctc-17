@@ -54,7 +54,7 @@ id,city,lat,lng,state/territory,population
 53,Cowell,-33.68227,136.921173,South Australia,537
 54,Cowra,-33.835541,148.696625,New South Wales,6795
 55,Cranbourne,-38.1,145.283333,Victoria,460491
-56,Currie,-39.929759,143.853847,Tasmania,
+56,Currie,-39.929759,143.853847,Tasmania,0
 57,Dalby,-27.18169,151.262054,Queensland,9847
 58,Darwin,-12.45722,130.836639,Northern Territory,93080
 59,Deniliquin,-35.532447,144.953643,New South Wales,8024
@@ -117,7 +117,7 @@ id,city,lat,lng,state/territory,population
 116,Maryborough,-37.04562,143.739227,Victoria,7046
 117,McMinns Lagoon,-12.55397,131.111649,Northern Territory,5025
 118,Meekatharra,-26.59524,118.493927,Western Australia,654
-119,Melbourne,-37.813938,144.963425,Victoria,
+119,Melbourne,-37.813938,144.963425,Victoria,0
 120,Melton,-37.683392,144.585434,Victoria,32368
 121,Meningie,-35.688412,139.338562,South Australia,1501
 122,Merredin,-31.48094,118.274483,Western Australia,2668
