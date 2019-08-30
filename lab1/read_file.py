@@ -63,3 +63,4 @@ for i in range(num_cities):
     print("CITY " + str(current_city_id) + ": " + str(current_city.name))
     for j in current_city.neighborhood:
         print("NEARBY " + str(j.id) + ": " + str(j.name))
+
