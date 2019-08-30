@@ -1,0 +1,871 @@
+CITY 1: Adelaide
+NEARBY 2: Adelaide River
+NEARBY 3: Albany
+CITY 2: Adelaide River
+NEARBY 4: Albury
+NEARBY 1: Adelaide
+CITY 3: Albany
+NEARBY 1: Adelaide
+NEARBY 4: Albury
+NEARBY 5: Alice Springs
+CITY 4: Albury
+NEARBY 2: Adelaide River
+NEARBY 3: Albany
+NEARBY 6: Andamooka
+CITY 5: Alice Springs
+NEARBY 3: Albany
+NEARBY 6: Andamooka
+NEARBY 7: Ararat
+CITY 6: Andamooka
+NEARBY 4: Albury
+NEARBY 5: Alice Springs
+NEARBY 8: Armidale
+CITY 7: Ararat
+NEARBY 5: Alice Springs
+NEARBY 8: Armidale
+NEARBY 9: Atherton
+CITY 8: Armidale
+NEARBY 6: Andamooka
+NEARBY 7: Ararat
+NEARBY 10: Ayr
+CITY 9: Atherton
+NEARBY 7: Ararat
+NEARBY 10: Ayr
+NEARBY 11: Bairnsdale East
+CITY 10: Ayr
+NEARBY 8: Armidale
+NEARBY 9: Atherton
+NEARBY 12: Ballarat
+CITY 11: Bairnsdale East
+NEARBY 9: Atherton
+NEARBY 12: Ballarat
+NEARBY 13: Ballina
+CITY 12: Ballarat
+NEARBY 10: Ayr
+NEARBY 11: Bairnsdale East
+NEARBY 14: Barcaldine
+CITY 13: Ballina
+NEARBY 11: Bairnsdale East
+NEARBY 14: Barcaldine
+NEARBY 15: Batemans Bay
+CITY 14: Barcaldine
+NEARBY 12: Ballarat
+NEARBY 13: Ballina
+NEARBY 16: Bathurst
+CITY 15: Batemans Bay
+NEARBY 13: Ballina
+NEARBY 16: Bathurst
+NEARBY 17: Bedourie
+CITY 16: Bathurst
+NEARBY 14: Barcaldine
+NEARBY 15: Batemans Bay
+NEARBY 18: Bendigo
+CITY 17: Bedourie
+NEARBY 15: Batemans Bay
+NEARBY 18: Bendigo
+NEARBY 19: Berri
+CITY 18: Bendigo
+NEARBY 16: Bathurst
+NEARBY 17: Bedourie
+NEARBY 20: Bicheno
+CITY 19: Berri
+NEARBY 17: Bedourie
+NEARBY 20: Bicheno
+NEARBY 21: Biloela
+CITY 20: Bicheno
+NEARBY 18: Bendigo
+NEARBY 19: Berri
+NEARBY 22: Birdsville
+CITY 21: Biloela
+NEARBY 19: Berri
+NEARBY 22: Birdsville
+NEARBY 23: Bongaree
+CITY 22: Birdsville
+NEARBY 20: Bicheno
+NEARBY 21: Biloela
+NEARBY 24: Bordertown
+CITY 23: Bongaree
+NEARBY 21: Biloela
+NEARBY 24: Bordertown
+NEARBY 25: Boulia
+CITY 24: Bordertown
+NEARBY 22: Birdsville
+NEARBY 23: Bongaree
+NEARBY 26: Bourke
+CITY 25: Boulia
+NEARBY 23: Bongaree
+NEARBY 26: Bourke
+NEARBY 27: Bowen
+CITY 26: Bourke
+NEARBY 24: Bordertown
+NEARBY 25: Boulia
+NEARBY 28: Brisbane
+CITY 27: Bowen
+NEARBY 25: Boulia
+NEARBY 28: Brisbane
+NEARBY 29: Broken Hill
+CITY 28: Brisbane
+NEARBY 26: Bourke
+NEARBY 27: Bowen
+NEARBY 30: Broome
+CITY 29: Broken Hill
+NEARBY 27: Bowen
+NEARBY 30: Broome
+NEARBY 31: Bunbury
+CITY 30: Broome
+NEARBY 28: Brisbane
+NEARBY 29: Broken Hill
+NEARBY 32: Bundaberg
+CITY 31: Bunbury
+NEARBY 29: Broken Hill
+NEARBY 32: Bundaberg
+NEARBY 33: Burketown
+CITY 32: Bundaberg
+NEARBY 30: Broome
+NEARBY 31: Bunbury
+NEARBY 34: Burnie
+CITY 33: Burketown
+NEARBY 31: Bunbury
+NEARBY 34: Burnie
+NEARBY 35: Busselton
+CITY 34: Burnie
+NEARBY 32: Bundaberg
+NEARBY 33: Burketown
+NEARBY 36: Byron Bay
+CITY 35: Busselton
+NEARBY 33: Burketown
+NEARBY 36: Byron Bay
+NEARBY 37: Caboolture
+CITY 36: Byron Bay
+NEARBY 34: Burnie
+NEARBY 35: Busselton
+NEARBY 38: Cairns
+CITY 37: Caboolture
+NEARBY 35: Busselton
+NEARBY 38: Cairns
+NEARBY 39: Caloundra
+CITY 38: Cairns
+NEARBY 36: Byron Bay
+NEARBY 37: Caboolture
+NEARBY 40: Camooweal
+CITY 39: Caloundra
+NEARBY 37: Caboolture
+NEARBY 40: Camooweal
+NEARBY 41: Canberra
+CITY 40: Camooweal
+NEARBY 38: Cairns
+NEARBY 39: Caloundra
+NEARBY 42: Carnarvon
+CITY 41: Canberra
+NEARBY 39: Caloundra
+NEARBY 42: Carnarvon
+NEARBY 43: Ceduna
+CITY 42: Carnarvon
+NEARBY 40: Camooweal
+NEARBY 41: Canberra
+NEARBY 44: Central Coast
+CITY 43: Ceduna
+NEARBY 41: Canberra
+NEARBY 44: Central Coast
+NEARBY 45: Charleville
+CITY 44: Central Coast
+NEARBY 42: Carnarvon
+NEARBY 43: Ceduna
+NEARBY 46: Charters Towers
+CITY 45: Charleville
+NEARBY 43: Ceduna
+NEARBY 46: Charters Towers
+NEARBY 47: Clare
+CITY 46: Charters Towers
+NEARBY 44: Central Coast
+NEARBY 45: Charleville
+NEARBY 48: Cloncurry
+CITY 47: Clare
+NEARBY 45: Charleville
+NEARBY 48: Cloncurry
+NEARBY 49: Cobram
+CITY 48: Cloncurry
+NEARBY 46: Charters Towers
+NEARBY 47: Clare
+NEARBY 50: Coffs Harbour
+CITY 49: Cobram
+NEARBY 47: Clare
+NEARBY 50: Coffs Harbour
+NEARBY 51: Colac
+CITY 50: Coffs Harbour
+NEARBY 48: Cloncurry
+NEARBY 49: Cobram
+NEARBY 52: Cooma
+CITY 51: Colac
+NEARBY 49: Cobram
+NEARBY 52: Cooma
+NEARBY 53: Cowell
+CITY 52: Cooma
+NEARBY 50: Coffs Harbour
+NEARBY 51: Colac
+NEARBY 54: Cowra
+CITY 53: Cowell
+NEARBY 51: Colac
+NEARBY 54: Cowra
+NEARBY 55: Cranbourne
+CITY 54: Cowra
+NEARBY 52: Cooma
+NEARBY 53: Cowell
+NEARBY 56: Currie
+CITY 55: Cranbourne
+NEARBY 53: Cowell
+NEARBY 56: Currie
+NEARBY 57: Dalby
+CITY 56: Currie
+NEARBY 54: Cowra
+NEARBY 55: Cranbourne
+NEARBY 58: Darwin
+CITY 57: Dalby
+NEARBY 55: Cranbourne
+NEARBY 58: Darwin
+NEARBY 59: Deniliquin
+CITY 58: Darwin
+NEARBY 56: Currie
+NEARBY 57: Dalby
+NEARBY 60: Devonport
+CITY 59: Deniliquin
+NEARBY 57: Dalby
+NEARBY 60: Devonport
+NEARBY 61: Dubbo
+CITY 60: Devonport
+NEARBY 58: Darwin
+NEARBY 59: Deniliquin
+NEARBY 62: East Maitland
+CITY 61: Dubbo
+NEARBY 59: Deniliquin
+NEARBY 62: East Maitland
+NEARBY 63: Echuca
+CITY 62: East Maitland
+NEARBY 60: Devonport
+NEARBY 61: Dubbo
+NEARBY 64: Eidsvold
+CITY 63: Echuca
+NEARBY 61: Dubbo
+NEARBY 64: Eidsvold
+NEARBY 65: Emerald
+CITY 64: Eidsvold
+NEARBY 62: East Maitland
+NEARBY 63: Echuca
+NEARBY 66: Esperance
+CITY 65: Emerald
+NEARBY 63: Echuca
+NEARBY 66: Esperance
+NEARBY 67: Exmouth
+CITY 66: Esperance
+NEARBY 64: Eidsvold
+NEARBY 65: Emerald
+NEARBY 68: Forbes
+CITY 67: Exmouth
+NEARBY 65: Emerald
+NEARBY 68: Forbes
+NEARBY 69: Forster
+CITY 68: Forbes
+NEARBY 66: Esperance
+NEARBY 67: Exmouth
+NEARBY 70: Gawler
+CITY 69: Forster
+NEARBY 67: Exmouth
+NEARBY 70: Gawler
+NEARBY 71: Geelong
+CITY 70: Gawler
+NEARBY 68: Forbes
+NEARBY 69: Forster
+NEARBY 72: Georgetown
+CITY 71: Geelong
+NEARBY 69: Forster
+NEARBY 72: Georgetown
+NEARBY 73: Geraldton
+CITY 72: Georgetown
+NEARBY 70: Gawler
+NEARBY 71: Geelong
+NEARBY 74: Gingin
+CITY 73: Geraldton
+NEARBY 71: Geelong
+NEARBY 74: Gingin
+NEARBY 75: Gladstone
+CITY 74: Gingin
+NEARBY 72: Georgetown
+NEARBY 73: Geraldton
+NEARBY 76: Gold Coast
+CITY 75: Gladstone
+NEARBY 73: Geraldton
+NEARBY 76: Gold Coast
+NEARBY 77: Goondiwindi
+CITY 76: Gold Coast
+NEARBY 74: Gingin
+NEARBY 75: Gladstone
+NEARBY 78: Goulburn
+CITY 77: Goondiwindi
+NEARBY 75: Gladstone
+NEARBY 78: Goulburn
+NEARBY 79: Griffith
+CITY 78: Goulburn
+NEARBY 76: Gold Coast
+NEARBY 77: Goondiwindi
+NEARBY 80: Gunnedah
+CITY 79: Griffith
+NEARBY 77: Goondiwindi
+NEARBY 80: Gunnedah
+NEARBY 81: Gympie South
+CITY 80: Gunnedah
+NEARBY 78: Goulburn
+NEARBY 79: Griffith
+NEARBY 82: Halls Creek
+CITY 81: Gympie South
+NEARBY 79: Griffith
+NEARBY 82: Halls Creek
+NEARBY 83: Hamilton
+CITY 82: Halls Creek
+NEARBY 80: Gunnedah
+NEARBY 81: Gympie South
+NEARBY 84: Hervey Bay
+CITY 83: Hamilton
+NEARBY 81: Gympie South
+NEARBY 84: Hervey Bay
+NEARBY 85: Hobart
+CITY 84: Hervey Bay
+NEARBY 82: Halls Creek
+NEARBY 83: Hamilton
+NEARBY 86: Horsham
+CITY 85: Hobart
+NEARBY 83: Hamilton
+NEARBY 86: Horsham
+NEARBY 87: Hughenden
+CITY 86: Horsham
+NEARBY 84: Hervey Bay
+NEARBY 85: Hobart
+NEARBY 88: Innisfail
+CITY 87: Hughenden
+NEARBY 85: Hobart
+NEARBY 88: Innisfail
+NEARBY 89: Inverell
+CITY 88: Innisfail
+NEARBY 86: Horsham
+NEARBY 87: Hughenden
+NEARBY 90: Ivanhoe
+CITY 89: Inverell
+NEARBY 87: Hughenden
+NEARBY 90: Ivanhoe
+NEARBY 91: Kalbarri
+CITY 90: Ivanhoe
+NEARBY 88: Innisfail
+NEARBY 89: Inverell
+NEARBY 92: Kalgoorlie
+CITY 91: Kalbarri
+NEARBY 89: Inverell
+NEARBY 92: Kalgoorlie
+NEARBY 93: Karratha
+CITY 92: Kalgoorlie
+NEARBY 90: Ivanhoe
+NEARBY 91: Kalbarri
+NEARBY 94: Karumba
+CITY 93: Karratha
+NEARBY 91: Kalbarri
+NEARBY 94: Karumba
+NEARBY 95: Katanning
+CITY 94: Karumba
+NEARBY 92: Kalgoorlie
+NEARBY 93: Karratha
+NEARBY 96: Katherine
+CITY 95: Katanning
+NEARBY 93: Karratha
+NEARBY 96: Katherine
+NEARBY 97: Katoomba
+CITY 96: Katherine
+NEARBY 94: Karumba
+NEARBY 95: Katanning
+NEARBY 98: Kempsey
+CITY 97: Katoomba
+NEARBY 95: Katanning
+NEARBY 98: Kempsey
+NEARBY 99: Kiama
+CITY 98: Kempsey
+NEARBY 96: Katherine
+NEARBY 97: Katoomba
+NEARBY 100: Kimba
+CITY 99: Kiama
+NEARBY 97: Katoomba
+NEARBY 100: Kimba
+NEARBY 101: Kingaroy
+CITY 100: Kimba
+NEARBY 98: Kempsey
+NEARBY 99: Kiama
+NEARBY 102: Kingoonya
+CITY 101: Kingaroy
+NEARBY 99: Kiama
+NEARBY 102: Kingoonya
+NEARBY 103: Kingston Beach
+CITY 102: Kingoonya
+NEARBY 100: Kimba
+NEARBY 101: Kingaroy
+NEARBY 104: Kingston South East
+CITY 103: Kingston Beach
+NEARBY 101: Kingaroy
+NEARBY 104: Kingston South East
+NEARBY 105: Kununurra
+CITY 104: Kingston South East
+NEARBY 102: Kingoonya
+NEARBY 103: Kingston Beach
+NEARBY 106: Kwinana
+CITY 105: Kununurra
+NEARBY 103: Kingston Beach
+NEARBY 106: Kwinana
+NEARBY 107: Launceston
+CITY 106: Kwinana
+NEARBY 104: Kingston South East
+NEARBY 105: Kununurra
+NEARBY 108: Laverton
+CITY 107: Launceston
+NEARBY 105: Kununurra
+NEARBY 108: Laverton
+NEARBY 109: Leeton
+CITY 108: Laverton
+NEARBY 106: Kwinana
+NEARBY 107: Launceston
+NEARBY 110: Leonora
+CITY 109: Leeton
+NEARBY 107: Launceston
+NEARBY 110: Leonora
+NEARBY 111: Lithgow
+CITY 110: Leonora
+NEARBY 108: Laverton
+NEARBY 109: Leeton
+NEARBY 112: Longreach
+CITY 111: Lithgow
+NEARBY 109: Leeton
+NEARBY 112: Longreach
+NEARBY 113: Mandurah
+CITY 112: Longreach
+NEARBY 110: Leonora
+NEARBY 111: Lithgow
+NEARBY 114: Manjimup
+CITY 113: Mandurah
+NEARBY 111: Lithgow
+NEARBY 114: Manjimup
+NEARBY 115: Maryborough
+CITY 114: Manjimup
+NEARBY 112: Longreach
+NEARBY 113: Mandurah
+NEARBY 116: Maryborough
+CITY 115: Maryborough
+NEARBY 113: Mandurah
+NEARBY 116: Maryborough
+NEARBY 117: McMinns Lagoon
+CITY 116: Maryborough
+NEARBY 114: Manjimup
+NEARBY 115: Maryborough
+NEARBY 118: Meekatharra
+CITY 117: McMinns Lagoon
+NEARBY 115: Maryborough
+NEARBY 118: Meekatharra
+NEARBY 119: Melbourne
+CITY 118: Meekatharra
+NEARBY 116: Maryborough
+NEARBY 117: McMinns Lagoon
+NEARBY 120: Melton
+CITY 119: Melbourne
+NEARBY 117: McMinns Lagoon
+NEARBY 120: Melton
+NEARBY 121: Meningie
+CITY 120: Melton
+NEARBY 118: Meekatharra
+NEARBY 119: Melbourne
+NEARBY 122: Merredin
+CITY 121: Meningie
+NEARBY 119: Melbourne
+NEARBY 122: Merredin
+NEARBY 123: Mildura
+CITY 122: Merredin
+NEARBY 120: Melton
+NEARBY 121: Meningie
+NEARBY 124: Moranbah
+CITY 123: Mildura
+NEARBY 121: Meningie
+NEARBY 124: Moranbah
+NEARBY 125: Morawa
+CITY 124: Moranbah
+NEARBY 122: Merredin
+NEARBY 123: Mildura
+NEARBY 126: Moree
+CITY 125: Morawa
+NEARBY 123: Mildura
+NEARBY 126: Moree
+NEARBY 127: Mount Barker
+CITY 126: Moree
+NEARBY 124: Moranbah
+NEARBY 125: Morawa
+NEARBY 128: Mount Gambier
+CITY 127: Mount Barker
+NEARBY 125: Morawa
+NEARBY 128: Mount Gambier
+NEARBY 129: Mount Isa
+CITY 128: Mount Gambier
+NEARBY 126: Moree
+NEARBY 127: Mount Barker
+NEARBY 130: Mount Magnet
+CITY 129: Mount Isa
+NEARBY 127: Mount Barker
+NEARBY 130: Mount Magnet
+NEARBY 131: Mudgee
+CITY 130: Mount Magnet
+NEARBY 128: Mount Gambier
+NEARBY 129: Mount Isa
+NEARBY 132: Murray Bridge
+CITY 131: Mudgee
+NEARBY 129: Mount Isa
+NEARBY 132: Murray Bridge
+NEARBY 133: Muswellbrook
+CITY 132: Murray Bridge
+NEARBY 130: Mount Magnet
+NEARBY 131: Mudgee
+NEARBY 134: Narrabri West
+CITY 133: Muswellbrook
+NEARBY 131: Mudgee
+NEARBY 134: Narrabri West
+NEARBY 135: Narrogin
+CITY 134: Narrabri West
+NEARBY 132: Murray Bridge
+NEARBY 133: Muswellbrook
+NEARBY 136: Newcastle
+CITY 135: Narrogin
+NEARBY 133: Muswellbrook
+NEARBY 136: Newcastle
+NEARBY 137: Newman
+CITY 136: Newcastle
+NEARBY 134: Narrabri West
+NEARBY 135: Narrogin
+NEARBY 138: Norseman
+CITY 137: Newman
+NEARBY 135: Narrogin
+NEARBY 138: Norseman
+NEARBY 139: North Lismore
+CITY 138: Norseman
+NEARBY 136: Newcastle
+NEARBY 137: Newman
+NEARBY 140: North Mackay
+CITY 139: North Lismore
+NEARBY 137: Newman
+NEARBY 140: North Mackay
+NEARBY 141: North Scottsdale
+CITY 140: North Mackay
+NEARBY 138: Norseman
+NEARBY 139: North Lismore
+NEARBY 142: Northam
+CITY 141: North Scottsdale
+NEARBY 139: North Lismore
+NEARBY 142: Northam
+NEARBY 143: Nowra
+CITY 142: Northam
+NEARBY 140: North Mackay
+NEARBY 141: North Scottsdale
+NEARBY 144: Oatlands
+CITY 143: Nowra
+NEARBY 141: North Scottsdale
+NEARBY 144: Oatlands
+NEARBY 145: Onslow
+CITY 144: Oatlands
+NEARBY 142: Northam
+NEARBY 143: Nowra
+NEARBY 146: Orange
+CITY 145: Onslow
+NEARBY 143: Nowra
+NEARBY 146: Orange
+NEARBY 147: Ouyen
+CITY 146: Orange
+NEARBY 144: Oatlands
+NEARBY 145: Onslow
+NEARBY 148: Pambula
+CITY 147: Ouyen
+NEARBY 145: Onslow
+NEARBY 148: Pambula
+NEARBY 149: Pannawonica
+CITY 148: Pambula
+NEARBY 146: Orange
+NEARBY 147: Ouyen
+NEARBY 150: Parkes
+CITY 149: Pannawonica
+NEARBY 147: Ouyen
+NEARBY 150: Parkes
+NEARBY 151: Penola
+CITY 150: Parkes
+NEARBY 148: Pambula
+NEARBY 149: Pannawonica
+NEARBY 152: Perth
+CITY 151: Penola
+NEARBY 149: Pannawonica
+NEARBY 152: Perth
+NEARBY 153: Peterborough
+CITY 152: Perth
+NEARBY 150: Parkes
+NEARBY 151: Penola
+NEARBY 154: Pine Creek
+CITY 153: Peterborough
+NEARBY 151: Penola
+NEARBY 154: Pine Creek
+NEARBY 155: Port Augusta West
+CITY 154: Pine Creek
+NEARBY 152: Perth
+NEARBY 153: Peterborough
+NEARBY 156: Port Denison
+CITY 155: Port Augusta West
+NEARBY 153: Peterborough
+NEARBY 156: Port Denison
+NEARBY 157: Port Douglas
+CITY 156: Port Denison
+NEARBY 154: Pine Creek
+NEARBY 155: Port Augusta West
+NEARBY 158: Port Hedland
+CITY 157: Port Douglas
+NEARBY 155: Port Augusta West
+NEARBY 158: Port Hedland
+NEARBY 159: Port Lincoln
+CITY 158: Port Hedland
+NEARBY 156: Port Denison
+NEARBY 157: Port Douglas
+NEARBY 160: Port Macquarie
+CITY 159: Port Lincoln
+NEARBY 157: Port Douglas
+NEARBY 160: Port Macquarie
+NEARBY 161: Port Pirie
+CITY 160: Port Macquarie
+NEARBY 158: Port Hedland
+NEARBY 159: Port Lincoln
+NEARBY 162: Portland
+CITY 161: Port Pirie
+NEARBY 159: Port Lincoln
+NEARBY 162: Portland
+NEARBY 163: Proserpine
+CITY 162: Portland
+NEARBY 160: Port Macquarie
+NEARBY 161: Port Pirie
+NEARBY 164: Queanbeyan
+CITY 163: Proserpine
+NEARBY 161: Port Pirie
+NEARBY 164: Queanbeyan
+NEARBY 165: Queenstown
+CITY 164: Queanbeyan
+NEARBY 162: Portland
+NEARBY 163: Proserpine
+NEARBY 166: Quilpie
+CITY 165: Queenstown
+NEARBY 163: Proserpine
+NEARBY 166: Quilpie
+NEARBY 167: Ravensthorpe
+CITY 166: Quilpie
+NEARBY 164: Queanbeyan
+NEARBY 165: Queenstown
+NEARBY 168: Richmond
+CITY 167: Ravensthorpe
+NEARBY 165: Queenstown
+NEARBY 168: Richmond
+NEARBY 169: Richmond North
+CITY 168: Richmond
+NEARBY 166: Quilpie
+NEARBY 167: Ravensthorpe
+NEARBY 170: Rockhampton
+CITY 169: Richmond North
+NEARBY 167: Ravensthorpe
+NEARBY 170: Rockhampton
+NEARBY 171: Roebourne
+CITY 170: Rockhampton
+NEARBY 168: Richmond
+NEARBY 169: Richmond North
+NEARBY 172: Roma
+CITY 171: Roebourne
+NEARBY 169: Richmond North
+NEARBY 172: Roma
+NEARBY 173: Sale
+CITY 172: Roma
+NEARBY 170: Rockhampton
+NEARBY 171: Roebourne
+NEARBY 174: Scone
+CITY 173: Sale
+NEARBY 171: Roebourne
+NEARBY 174: Scone
+NEARBY 175: Seymour
+CITY 174: Scone
+NEARBY 172: Roma
+NEARBY 173: Sale
+NEARBY 176: Shepparton
+CITY 175: Seymour
+NEARBY 173: Sale
+NEARBY 176: Shepparton
+NEARBY 177: Singleton
+CITY 176: Shepparton
+NEARBY 174: Scone
+NEARBY 175: Seymour
+NEARBY 178: Smithton
+CITY 177: Singleton
+NEARBY 175: Seymour
+NEARBY 178: Smithton
+NEARBY 179: South Grafton
+CITY 178: Smithton
+NEARBY 176: Shepparton
+NEARBY 177: Singleton
+NEARBY 180: South Ingham
+CITY 179: South Grafton
+NEARBY 177: Singleton
+NEARBY 180: South Ingham
+NEARBY 181: South Melbourne
+CITY 180: South Ingham
+NEARBY 178: Smithton
+NEARBY 179: South Grafton
+NEARBY 182: Southern Cross
+CITY 181: South Melbourne
+NEARBY 179: South Grafton
+NEARBY 182: Southern Cross
+NEARBY 183: Stawell
+CITY 182: Southern Cross
+NEARBY 180: South Ingham
+NEARBY 181: South Melbourne
+NEARBY 184: Streaky Bay
+CITY 183: Stawell
+NEARBY 181: South Melbourne
+NEARBY 184: Streaky Bay
+NEARBY 185: Sunbury
+CITY 184: Streaky Bay
+NEARBY 182: Southern Cross
+NEARBY 183: Stawell
+NEARBY 186: Swan Hill
+CITY 185: Sunbury
+NEARBY 183: Stawell
+NEARBY 186: Swan Hill
+NEARBY 187: Sydney
+CITY 186: Swan Hill
+NEARBY 184: Streaky Bay
+NEARBY 185: Sunbury
+NEARBY 188: Taree
+CITY 187: Sydney
+NEARBY 185: Sunbury
+NEARBY 188: Taree
+NEARBY 189: Thargomindah
+CITY 188: Taree
+NEARBY 186: Swan Hill
+NEARBY 187: Sydney
+NEARBY 190: Theodore
+CITY 189: Thargomindah
+NEARBY 187: Sydney
+NEARBY 190: Theodore
+NEARBY 191: Three Springs
+CITY 190: Theodore
+NEARBY 188: Taree
+NEARBY 189: Thargomindah
+NEARBY 192: Tom Price
+CITY 191: Three Springs
+NEARBY 189: Thargomindah
+NEARBY 192: Tom Price
+NEARBY 193: Toowoomba
+CITY 192: Tom Price
+NEARBY 190: Theodore
+NEARBY 191: Three Springs
+NEARBY 194: Townsville
+CITY 193: Toowoomba
+NEARBY 191: Three Springs
+NEARBY 194: Townsville
+NEARBY 195: Traralgon
+CITY 194: Townsville
+NEARBY 192: Tom Price
+NEARBY 193: Toowoomba
+NEARBY 196: Tumby Bay
+CITY 195: Traralgon
+NEARBY 193: Toowoomba
+NEARBY 196: Tumby Bay
+NEARBY 197: Tumut
+CITY 196: Tumby Bay
+NEARBY 194: Townsville
+NEARBY 195: Traralgon
+NEARBY 198: Tweed Heads
+CITY 197: Tumut
+NEARBY 195: Traralgon
+NEARBY 198: Tweed Heads
+NEARBY 199: Ulladulla
+CITY 198: Tweed Heads
+NEARBY 196: Tumby Bay
+NEARBY 197: Tumut
+NEARBY 200: Victor Harbor
+CITY 199: Ulladulla
+NEARBY 197: Tumut
+NEARBY 200: Victor Harbor
+NEARBY 201: Wagga Wagga
+CITY 200: Victor Harbor
+NEARBY 198: Tweed Heads
+NEARBY 199: Ulladulla
+NEARBY 202: Wagin
+CITY 201: Wagga Wagga
+NEARBY 199: Ulladulla
+NEARBY 202: Wagin
+NEARBY 203: Wallaroo
+CITY 202: Wagin
+NEARBY 200: Victor Harbor
+NEARBY 201: Wagga Wagga
+NEARBY 204: Wangaratta
+CITY 203: Wallaroo
+NEARBY 201: Wagga Wagga
+NEARBY 204: Wangaratta
+NEARBY 205: Warrnambool
+CITY 204: Wangaratta
+NEARBY 202: Wagin
+NEARBY 203: Wallaroo
+NEARBY 206: Warwick
+CITY 205: Warrnambool
+NEARBY 203: Wallaroo
+NEARBY 206: Warwick
+NEARBY 207: Weipa
+CITY 206: Warwick
+NEARBY 204: Wangaratta
+NEARBY 205: Warrnambool
+NEARBY 208: West Tamworth
+CITY 207: Weipa
+NEARBY 205: Warrnambool
+NEARBY 208: West Tamworth
+NEARBY 209: Whyalla
+CITY 208: West Tamworth
+NEARBY 206: Warwick
+NEARBY 207: Weipa
+NEARBY 210: Wilcannia
+CITY 209: Whyalla
+NEARBY 207: Weipa
+NEARBY 210: Wilcannia
+NEARBY 211: Windorah
+CITY 210: Wilcannia
+NEARBY 208: West Tamworth
+NEARBY 209: Whyalla
+NEARBY 212: Winton
+CITY 211: Windorah
+NEARBY 209: Whyalla
+NEARBY 212: Winton
+NEARBY 213: Wollongong
+CITY 212: Winton
+NEARBY 210: Wilcannia
+NEARBY 211: Windorah
+NEARBY 214: Wonthaggi
+CITY 213: Wollongong
+NEARBY 211: Windorah
+NEARBY 214: Wonthaggi
+NEARBY 215: Woomera
+CITY 214: Wonthaggi
+NEARBY 212: Winton
+NEARBY 213: Wollongong
+NEARBY 216: Yamba
+CITY 215: Woomera
+NEARBY 213: Wollongong
+NEARBY 216: Yamba
+NEARBY 217: Yeppoon
+CITY 216: Yamba
+NEARBY 214: Wonthaggi
+NEARBY 215: Woomera
+NEARBY 218: Young
+CITY 217: Yeppoon
+NEARBY 215: Woomera
+NEARBY 218: Young
+NEARBY 219: Yulara
+CITY 218: Young
+NEARBY 216: Yamba
+NEARBY 217: Yeppoon
+CITY 219: Yulara
+NEARBY 217: Yeppoon

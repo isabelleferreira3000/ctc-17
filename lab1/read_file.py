@@ -19,35 +19,47 @@ for i in range(num_cities):
 for i in range(num_cities):
     current_city = all_cities[i]
     current_city_id = current_city.id
-    print(str(current_city_id) + ": " + str(current_city.name))
+    # print(str(current_city_id) + ": " + str(current_city.name))
 
     # Se x > 1 e x é par, uma cidade com ID x se conecta com as cidades x + 2 e x - 1.
     # Se X é ímpar e x > 2, esta cidade x se conecta com as cidades x - 2 e x + 1
     if current_city_id > 1 and current_city_id % 2 == 0:
         if current_city_id + 2 <= num_cities:
             nearby_city = all_cities[(current_city_id - 1) + 2]
-            current_city.neighborhood.append(nearby_city)
-            nearby_city.neighborhood.append(current_city)
+
+            if nearby_city not in current_city.neighborhood:
+                current_city.neighborhood.append(nearby_city)
+            if current_city not in nearby_city.neighborhood:
+                nearby_city.neighborhood.append(current_city)
 
         if current_city_id - 1 > 0:
             nearby_city = all_cities[(current_city_id - 1) - 1]
-            current_city.neighborhood.append(nearby_city)
-            nearby_city.neighborhood.append(current_city)
+
+            if nearby_city not in current_city.neighborhood:
+                current_city.neighborhood.append(nearby_city)
+            if current_city not in nearby_city.neighborhood:
+                nearby_city.neighborhood.append(current_city)
 
     elif current_city_id > 2 and current_city_id % 2 == 1:
         if current_city_id - 2 > 0:
             nearby_city = all_cities[(current_city_id - 1) - 2]
-            current_city.neighborhood.append(nearby_city)
-            nearby_city.neighborhood.append(current_city)
-            pass
+
+            if nearby_city not in current_city.neighborhood:
+                current_city.neighborhood.append(nearby_city)
+            if current_city not in nearby_city.neighborhood:
+                nearby_city.neighborhood.append(current_city)
 
         if current_city_id + 1 <= num_cities:
             nearby_city = all_cities[(current_city_id - 1) + 1]
-            current_city.neighborhood.append(nearby_city)
-            nearby_city.neighborhood.append(current_city)
 
-# print(australia_dataset.values[:, 0].size)
-# print(australia_dataset.values[:, 0])
-# print(australia_dataset)
-# train_X = dataset.values[:, :46]
-# train_Y = dataset.values[:, 46:]
+            if nearby_city not in current_city.neighborhood:
+                current_city.neighborhood.append(nearby_city)
+            if current_city not in nearby_city.neighborhood:
+                nearby_city.neighborhood.append(current_city)
+
+for i in range(num_cities):
+    current_city = all_cities[i]
+    current_city_id = current_city.id
+    print("CITY " + str(current_city_id) + ": " + str(current_city.name))
+    for j in current_city.neighborhood:
+        print("NEARBY " + str(j.id) + ": " + str(j.name))
