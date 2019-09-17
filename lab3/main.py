@@ -1,56 +1,48 @@
 import pandas as pd
-import numpy as np
-import operator
+import math
 
-# READING MOVIES, RATINGS AND USERS DATA
-print("READING MOVIES, RATINGS AND USERS DATA")
-movies_data = pd.read_csv('ml-1m/movies.dat', delimiter="::", engine='python')
-movies_data = movies_data.dropna(axis=0, how='any')
 
-ratings_data = pd.read_csv('ml-1m/ratings.dat', delimiter="::", engine='python')
-ratings_data = ratings_data.dropna(axis=0, how='any')
-ratings_data = ratings_data.drop(columns=['Timestamp'])  # removing Timestamp column
+def calculate_entropy():
+    pass
 
-users_data = pd.read_csv('ml-1m/users.dat', delimiter="::", engine='python')
+
+# READING NEW USERS DATA
+print("READING NEW USERS DATA")
+users_data = pd.read_csv('new_users.csv', delimiter=",", engine='python')
 users_data = users_data.dropna(axis=0, how='any')
-users_data = users_data.drop(columns=['Zip-code'])  # removing Zip-code column
+users_data = users_data.drop(columns=['RowID'])  # removing RowID column
 
-# MERGING MOVIES, RATINGS AND USERS DATA
-print("MERGING MOVIES, RATINGS AND USERS DATA")
-merged_data = pd.merge(users_data, ratings_data, how='inner', on='UserID')
-merged_data = pd.merge(merged_data, movies_data, how='inner', on='MovieID')
+genres_count = users_data['Genres'].value_counts()
+genres_count = pd.DataFrame({'Genres': genres_count.index, 'count': genres_count.values})
 
-# GETTING 5 OR 4 STARS MOVIES FROM MERGED_DATA
-print("GETTING 5 OR 4 STARS MOVIES FROM MERGED_DATA")
-data_with_five_stars = merged_data.loc[merged_data['Rating'] == 5]
-data_with_four_stars = merged_data.loc[merged_data['Rating'] == 4]
-merged_data_five_or_four_stars = pd.concat([data_with_five_stars, data_with_four_stars])
+print(genres_count)
 
-# CREATING GENRES COLUMN ON USERS DATA
-print("CREATING GENRES COLUMN ON USERS DATA")
-users_data['Genres'] = np.nan
+p_all_genres = genres_count['count'].sum()
 
-# FILLING GENRES COLUMN ON USERS DATA
-print("FILLING GENRES COLUMN ON USERS DATA")
-dict_aux = {}
-for userID in merged_data_five_or_four_stars['UserID'].unique():
-    data_from_userID = merged_data_five_or_four_stars.loc[merged_data_five_or_four_stars['UserID'] == userID]
+entropy = 0
+for genre in genres_count['Genres'].unique():
+    p_genre = genres_count.loc[genres_count['Genres'] == genre]['count'].values[0]
+    aux = p_genre/p_all_genres
+    entropy -= aux * math.log2(aux)
 
-    for multi_genre in data_from_userID['Genres'].to_list():
+print("Entropy: " + str(entropy))
 
-        genre_list = multi_genre.split("|")
-        for genre in genre_list:
-            if genre in dict_aux:
-                dict_aux[genre] += 1
-            else:
-                dict_aux[genre] = 1
+users_data_attributes = users_data.drop(columns=['UserID', 'Genres'])
+for column in users_data_attributes.columns:
+    print("Column: " + column)
+    for aux in users_data[column].unique():
+        print("Valor: " + str(aux))
+        resulting_data = users_data.loc[users_data[column] == aux]
 
-    most_frequent_genre = max(dict_aux.items(), key=operator.itemgetter(1))[0]
-
-    users_data['Genres'] = np.where(users_data['UserID'] == userID,
-                                    str(most_frequent_genre),
-                                    users_data['Genres'])
-    dict_aux = {}
-
-# EXPORTING NEW USERS DATA
-users_data.to_csv(r'new_users.csv')
+        # genres_count = resulting_data['Genres'].value_counts()
+        # genres_count = pd.DataFrame({'Genres': genres_count.index, 'count': genres_count.values})
+        #
+        # # print(genres_count)
+        #
+        # p_all_genres = genres_count['count'].sum()
+        #
+        # entropy = 0
+        # for genre in genres_count['Genres'].unique():
+        #     p_genre = genres_count.loc[genres_count['Genres'] == genre]['count'].values[0]
+        #     aux = p_genre / p_all_genres
+        #     entropy -= aux * math.log2(aux)
