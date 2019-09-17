@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-import ast
+import operator
 
 # READING MOVIES, RATINGS AND USERS DATA
 print("READING MOVIES, RATINGS AND USERS DATA")
@@ -32,26 +32,25 @@ users_data['Genres'] = np.nan
 
 # FILLING GENRES COLUMN ON USERS DATA
 print("FILLING GENRES COLUMN ON USERS DATA")
+dict_aux = {}
 for userID in merged_data_five_or_four_stars['UserID'].unique():
     data_from_userID = merged_data_five_or_four_stars.loc[merged_data_five_or_four_stars['UserID'] == userID]
 
-    genres_count = data_from_userID['Genres'].value_counts()
-    max_genres_count = genres_count.max()
-    genres_count = pd.DataFrame({'Genres': genres_count.index, 'count': genres_count.values})
+    for multi_genre in data_from_userID['Genres'].to_list():
 
-    genres_list_for_userID = genres_count.loc[genres_count['count'] == max_genres_count]['Genres'].to_list()
-    genres_list_for_userID = sorted(genres_list_for_userID)
+        genre_list = multi_genre.split("|")
+        for genre in genre_list:
+            if genre in dict_aux:
+                dict_aux[genre] += 1
+            else:
+                dict_aux[genre] = 1
+
+    most_frequent_genre = max(dict_aux.items(), key=operator.itemgetter(1))[0]
+
     users_data['Genres'] = np.where(users_data['UserID'] == userID,
-                                    str(genres_list_for_userID),
+                                    str(most_frequent_genre),
                                     users_data['Genres'])
+    dict_aux = {}
 
-# [TUTORIAL] TO GET GENRES LIST TO A USER ID:
-# TRANSFORMING STRING OF LIST ON LIST:
-# x = ast.literal_eval(users_data.loc[users_data['UserID'] == 12]['Genres'].to_list()[0])
-# for i in x:
-#     print(i)
-# print(users_data)
-print(users_data['Genres'].unique()[8])
-
-# ideias: pegar uma coisa como "Action|Adventure|Animation" e separar em Action, Adventure e Animation
-# e só depois contar os gêneros que mais aparecem
+# EXPORTING NEW USERS DATA
+users_data.to_csv(r'new_users.csv')
