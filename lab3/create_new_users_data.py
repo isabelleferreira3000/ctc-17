@@ -20,6 +20,10 @@ print("MERGING MOVIES, RATINGS AND USERS DATA")
 merged_data = pd.merge(users_data, ratings_data, how='inner', on='UserID')
 merged_data = pd.merge(merged_data, movies_data, how='inner', on='MovieID')
 
+# EXPORTING MERGED DATA
+print("EXPORTING MERGED DATA")
+merged_data.to_csv(r'merged.csv')
+
 # GETTING 5 OR 4 STARS MOVIES FROM MERGED_DATA
 print("GETTING 5 OR 4 STARS MOVIES FROM MERGED_DATA")
 data_with_five_stars = merged_data.loc[merged_data['Rating'] == 5]
