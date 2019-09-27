@@ -11,14 +11,18 @@ class Node:
 
     def print_node(self):
         print("-----------")
-        if self.parent is not None:
-            print("Parent Attribute: " + str(self.parent.attribute))
-        else:
+        if self.parent is None:
             print("Root!")
+        else:
+            print("Parent Attribute: " + str(self.parent.attribute))
 
-        for value, node in self.children.items():
-            print("Value: " + str(value))
-            node.print_node()
+        if self.is_classification:
+            print("Classification: " + str(self.classification))
+        else:
+            print("My Attribute: " + str(self.attribute))
+            for value, node in self.children.items():
+                print("Value: " + str(value))
+                node.print_node()
 
     def set_classification(self, classification):
         self.is_classification = True

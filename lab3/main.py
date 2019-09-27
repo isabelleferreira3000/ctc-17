@@ -2,6 +2,7 @@ import pandas as pd
 import math
 import operator
 from Node import Node
+import copy
 
 
 def calculate_entropy(data, column_name):
@@ -76,9 +77,9 @@ def get_max_gain_attribute(data):
     # for attribute, gain in gain_attribute.items():
     #     print(attribute, '->', gain)
 
-    print("MAX GAIN")
+    # print("MAX GAIN")
     max_gain_attribute = max(gain_attribute.items(), key=operator.itemgetter(1))[0]
-    print(max_gain_attribute)
+    # print(max_gain_attribute)
 
     return max_gain_attribute
 
@@ -88,6 +89,8 @@ def decision_tree_learning(data, attributes, pattern):
     print("data shape: " + str(data.shape))
     print("attributes: " + str(attributes))
     print("pattern: " + str(pattern))
+    data = copy.deepcopy(data)
+    attributes = copy.deepcopy(attributes)
 
     if data.shape[0] == 0:
         print("exemplos eh vazio, retornou: " + str(pattern))
@@ -107,26 +110,34 @@ def decision_tree_learning(data, attributes, pattern):
     else:
         print("else")
         best_attribute = get_max_gain_attribute(data)
+        print("best_attribute: " + str(best_attribute))
         tree = Node(best_attribute)
         m = data['Rating'].value_counts().idxmax()
         attributes.remove(best_attribute)
 
-        for value_j in data[best_attribute].unique():
+        for value_j in attributes_list_of_values[best_attribute]:
+            print("value_j: " + str(value_j))
             data_j = data.loc[data[best_attribute] == value_j]
             data_j = data_j.drop(columns=[best_attribute])
             subtree = decision_tree_learning(data_j, attributes, m)
+            print("End decision_tree_learning")
 
             if isinstance(subtree, Node):
+                print("subtree is Node")
                 subtree.set_parent(tree)
                 tree.children[value_j] = subtree
 
             else:
+                print("subtree is Classification")
                 aux = Node()
                 aux.set_classification(subtree)
                 tree.children[value_j] = aux
+                aux.set_parent(tree)
 
-        print("a: " + str(type(tree)))
         return tree
+
+
+attributes_list_of_values = {}
 
 
 if __name__ == "__main__":
@@ -136,9 +147,13 @@ if __name__ == "__main__":
     dataset = pd.read_csv('data.csv', delimiter=",", engine='python')
     dataset = dataset.dropna(axis=0, how='any')
 
+    for column in dataset.columns:
+        print("coluna: " + str(column))
+        attributes_list_of_values[column] = []
+        for value in dataset[column].unique():
+            print("value: " + str(value))
+            attributes_list_of_values[column].append(value)
+
     attributes_list = dataset.columns.to_list()
     attributes_list.remove('Rating')
     decision_tree = decision_tree_learning(dataset, attributes_list, dataset['Rating'].value_counts().idxmax())
-    print("PRINTANDO ARVORE")
-    print("b: " + str(type(decision_tree)))
-    decision_tree.print_node()
