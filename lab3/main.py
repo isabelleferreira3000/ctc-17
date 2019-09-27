@@ -147,6 +147,23 @@ if __name__ == "__main__":
     dataset = pd.read_csv('data.csv', delimiter=",", engine='python')
     dataset = dataset.dropna(axis=0, how='any')
 
+    dataset = dataset.sample(frac=1).reset_index(drop=True)
+
+    num_of_rows = dataset.shape[0]
+    print("total of rows: " + str(num_of_rows))
+
+    train_ratio = 0.6
+    validation_ratio = 0.2
+    test_validation = 1 - train_ratio - validation_ratio
+
+    train = int(train_ratio * num_of_rows)
+    validation = int(validation_ratio * num_of_rows)
+
+    train_dataset = dataset[:train]
+    aux_dataset = dataset[-(num_of_rows-train):]
+    validation_dataset = aux_dataset[:validation]
+    test_dataset = dataset[-(num_of_rows-train-validation):]
+
     for column in dataset.columns:
         print("coluna: " + str(column))
         attributes_list_of_values[column] = []
@@ -156,4 +173,4 @@ if __name__ == "__main__":
 
     attributes_list = dataset.columns.to_list()
     attributes_list.remove('Rating')
-    decision_tree = decision_tree_learning(dataset, attributes_list, dataset['Rating'].value_counts().idxmax())
+    decision_tree = decision_tree_learning(train_dataset, attributes_list, dataset['Rating'].value_counts().idxmax())
