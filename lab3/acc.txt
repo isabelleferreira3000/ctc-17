@@ -1,0 +1,19 @@
+total de linhas = 2101815
+
+train_ratio = 0.6
+validation_ratio = 0.2
+test_ratio = 0.2
+
+train acc: 0.783362633406524
+validation acc: 0.35008790021957215
+test acc: 0.35008790021957215
+
+train_ratio = 0.024
+validation_ratio = 0.008
+test_ratio = 0.008
+
+train acc: 0.7739230418492159
+validation acc: 0.3217556797906507
+test acc: 0.3217556797906507
+
+
