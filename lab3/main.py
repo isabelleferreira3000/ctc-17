@@ -1,6 +1,7 @@
 import pandas as pd
 import math
 import operator
+from Node import Node
 
 
 def calculate_entropy(data, column_name):
@@ -20,9 +21,9 @@ def calculate_entropy(data, column_name):
 
 def get_max_gain_attribute(data):
     # CALCULATING ENTROPY
-    print("CALCULATING ENTROPY")
+    # print("CALCULATING ENTROPY")
     entropy = calculate_entropy(data, 'Rating')
-    print("Entropy: " + str(entropy))
+    # print("Entropy: " + str(entropy))
 
     attribute_value_entropy = {}
     attribute_value_quantity = {}
@@ -30,17 +31,17 @@ def get_max_gain_attribute(data):
     total_rows = data.shape[0]
 
     # CALCULATING PARTIAL ENTROPY FOR EACH VALUE FROM A ATTRIBUTE
-    print("CALCULATING PARTIAL ENTROPY FOR EACH VALUE FROM A ATTRIBUTE")
+    # print("CALCULATING PARTIAL ENTROPY FOR EACH VALUE FROM A ATTRIBUTE")
     data_attributes = data.drop(columns=['Rating'])
     for attribute in data_attributes.columns:
-        print("Attribute: " + attribute)
+        # print("Attribute: " + attribute)
 
         attribute_value_entropy[attribute] = {}
         attribute_value_quantity[attribute] = {}
         attribute_value_rating_quantity[attribute] = {}
 
         for value in data[attribute].unique():
-            print("Valor: " + str(value))
+            # print("Valor: " + str(value))
             resulting_data = data.loc[data[attribute] == value]
             attribute_value_quantity[attribute][value] = resulting_data.shape[0]
             attribute_value_entropy[attribute][value] = calculate_entropy(resulting_data, 'Rating')
@@ -54,54 +55,90 @@ def get_max_gain_attribute(data):
             attribute_value_rating_quantity[attribute][value][5] = aux_data.loc[data['Rating'] == 5].shape[0]
 
     # PARTIAL ENTROPY BY EACH VALUE FROM A ATTRIBUTE
-    print("PARTIAL ENTROPY BY EACH VALUE FROM A ATTRIBUTE")
+    # print("PARTIAL ENTROPY BY EACH VALUE FROM A ATTRIBUTE")
     gain_attribute = {}
     for attribute, _ in attribute_value_entropy.items():
-        print(attribute)
+        # print(attribute)
         gain_attribute[attribute] = entropy
         for value, partial_entropy in attribute_value_entropy[attribute].items():
-            print(value, '->', partial_entropy)
+            # print(value, '->', partial_entropy)
             gain_attribute[attribute] -= (attribute_value_quantity[attribute][value] / total_rows) * partial_entropy
 
     # QUANTITY BY EACH VALUE FROM A ATTRIBUTE
-    print("QUANTITY BY EACH VALUE FROM A ATTRIBUTE")
-    for attribute, _ in attribute_value_quantity.items():
-        print(attribute)
-        for value, quantity in attribute_value_quantity[attribute].items():
-            print(value, '->', quantity)
+    # print("QUANTITY BY EACH VALUE FROM A ATTRIBUTE")
+    # for attribute, _ in attribute_value_quantity.items():
+        # print(attribute)
+        # for value, quantity in attribute_value_quantity[attribute].items():
+            # print(value, '->', quantity)
 
     # GAIN BY ATTRIBUTE
-    print("GAIN BY ATTRIBUTE")
-    for attribute, gain in gain_attribute.items():
-        print(attribute, '->', gain)
+    # print("GAIN BY ATTRIBUTE")
+    # for attribute, gain in gain_attribute.items():
+    #     print(attribute, '->', gain)
 
     print("MAX GAIN")
     max_gain_attribute = max(gain_attribute.items(), key=operator.itemgetter(1))[0]
     print(max_gain_attribute)
 
-    # QUANTITY FOR MAX GAIN
-    print("QUANTITY FOR MAX GAIN")
-    count_zeros = 0
-    for value, _ in attribute_value_rating_quantity[max_gain_attribute].items():
-        print(value)
-        for rating, quantity in attribute_value_rating_quantity[max_gain_attribute][value].items():
-            print(rating, '->', quantity)
-            if quantity == 0:
-                count_zeros += 1
+    return max_gain_attribute
 
-    if count_zeros == 4:
-        return max_gain_attribute, True
+
+def decision_tree_learning(data, attributes, pattern):
+    print("\nStart decision_tree_learning")
+    print("data shape: " + str(data.shape))
+    print("attributes: " + str(attributes))
+    print("pattern: " + str(pattern))
+
+    if data.shape[0] == 0:
+        print("exemplos eh vazio, retornou: " + str(pattern))
+        return int(pattern)
+
+    elif len(data['Rating'].unique()) == 1:
+        print("todos os exemplos tem a mesma classificacao, retornou: " + str(data['Rating'].unique()[0]))
+        return int(data['Rating'].unique()[0])
+
+    elif attributes is None:
+        print("atributos eh None, retornou: " + str(data['Rating'].value_counts().idxmax()))
+        return int(data['Rating'].value_counts().idxmax())
+    elif len(attributes) == 0:
+        print("atributos eh vazio, retornou: " + str(data['Rating'].value_counts().idxmax()))
+        return int(data['Rating'].value_counts().idxmax())
+
     else:
-        return max_gain_attribute, False
+        print("else")
+        best_attribute = get_max_gain_attribute(data)
+        tree = Node(best_attribute)
+        m = data['Rating'].value_counts().idxmax()
+        attributes.remove(best_attribute)
+
+        for value_j in data[best_attribute].unique():
+            data_j = data.loc[data[best_attribute] == value_j]
+            data_j = data_j.drop(columns=[best_attribute])
+            subtree = decision_tree_learning(data_j, attributes, m)
+
+            if isinstance(subtree, Node):
+                subtree.set_parent(tree)
+                tree.children[value_j] = subtree
+
+            else:
+                aux = Node()
+                aux.set_classification(subtree)
+                tree.children[value_j] = aux
+
+        print("a: " + str(type(tree)))
+        return tree
 
 
 if __name__ == "__main__":
 
     # READING DATA
     print("READING DATA")
-    data = pd.read_csv('data.csv', delimiter=",", engine='python')
-    data = data.dropna(axis=0, how='any')
+    dataset = pd.read_csv('data.csv', delimiter=",", engine='python')
+    dataset = dataset.dropna(axis=0, how='any')
 
-    max_gain_attribute, is_finished = get_max_gain_attribute(data)
-
-    print("IS FINISHED? " + str(is_finished))
+    attributes_list = dataset.columns.to_list()
+    attributes_list.remove('Rating')
+    decision_tree = decision_tree_learning(dataset, attributes_list, dataset['Rating'].value_counts().idxmax())
+    print("PRINTANDO ARVORE")
+    print("b: " + str(type(decision_tree)))
+    decision_tree.print_node()
